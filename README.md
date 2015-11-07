@@ -29,18 +29,13 @@ composer require litipk/doctrine-mongodb-jiffy
 To use this type there are three steps:
 
 1. Install the library through Composer.
-2. Register the type in your application, if you are using Symfony, the Bundle constructor is a good place to do it:
-
-```php
+2. Register the type in your application, if you are using Symfony, the Bundle constructor is a good place to do it: ```php
 Type::registerType(
     'UniversalTimestamp',
     'Litipk\Jiffy\Doctrine\ODM\MongoDB\UniversalTimestampType'
 );
 ```
-
-3. Use the type in your models with the `@UniversalTimestampField` annotation.
-
-```php
+3. Use the type in your models with the `@UniversalTimestampField` annotation. ```php
 use Litipk\Jiffy\Doctrine\ODM\MongoDB\UniversalTimestampField;
 
 class OurDocument
