@@ -1,0 +1,15 @@
+{
+    "name": "litipk/doctrine-mongodb-jiffy",
+    "description": "Type adapter for Jiffy's Universal Timestamps on Doctrine MongoDB ODM",
+    "require": {
+        "litipk/php-jiffy": "1.1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrés Correa Casablanca",
+            "email": "castarco@litipk.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
