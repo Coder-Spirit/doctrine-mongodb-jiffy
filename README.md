@@ -2,8 +2,6 @@
 
 
 [![Author](http://img.shields.io/badge/author-@castarco-blue.svg?style=flat-square)](https://twitter.com/castarco)
-[![Build Status](https://img.shields.io/travis/Litipk/doctrine-mongodb-jiffy/master.svg?style=flat-square)](https://travis-ci.org/Litipk/doctrine-mongodb-jiffy)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/litipk/doctrine-mongodb-jiffy.svg?style=flat-square)](https://scrutinizer-ci.com/g/litipk/doctrine-mongodb-jiffy/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/litipk/doctrine-mongodb-jiffy.svg?style=flat-square)](https://scrutinizer-ci.com/g/litipk/doctrine-mongodb-jiffy)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Packagist Version](https://img.shields.io/packagist/v/Litipk/doctrine-mongodb-jiffy.svg?style=flat-square)](https://packagist.org/packages/Litipk/doctrine-mongodb-jiffy)
