@@ -3,7 +3,7 @@
     "description": "Type adapter for Jiffy's Universal Timestamps on Doctrine MongoDB ODM",
     "require": {
         "php": ">=5.5.0",
-        "litipk/php-jiffy": "^1.2",
+        "litipk/php-jiffy": "^1.3",
         "doctrine/mongodb-odm": "^1.0"
     },
     "license": "MIT",

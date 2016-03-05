@@ -29,7 +29,13 @@ class UniversalTimestampType extends Type
      */
     public function convertToDatabaseValue($timestamp)
     {
-        return (null !== $timestamp) ? $timestamp->asMongoDate() : null;
+        if (extension_loaded('mongo')) {
+            return (null !== $timestamp) ? $timestamp->asMongoDate() : null;
+        } elseif (extension_loaded('mongodb')) {
+            return (null !== $timestamp) ? $timestamp->asMongodbUTCDateTime() : null;
+        } else {
+            throw new \RuntimeException('Missing MongoDB extension');
+        }
     }
 
     /**
@@ -45,6 +51,12 @@ class UniversalTimestampType extends Type
      */
     public function closureToMongo()
     {
-        return '$return = (null !== $v) ? $v->asMongoDate() : null;';
+        if (extension_loaded('mongo')) {
+            return '$return = (null !== $v) ? $v->asMongoDate() : null;';
+        } elseif (extension_loaded('mongodb')) {
+            return '$return (null !== $timestamp) ? $timestamp->asMongodbUTCDateTime() : null;';
+        } else {
+            throw new \RuntimeException('Missing MongoDB extension');
+        }
     }
 }

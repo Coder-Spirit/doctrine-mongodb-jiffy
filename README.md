@@ -16,6 +16,9 @@ This library provides a Doctrine ODM type to make possible using the PHP-Jiffy's
 Doctrine ODM models. It's very useful if you need to deal with very precise timestamps but you don't want to couple your
 code with the `\MongoDate` class without giving up on type hinting.
 
+As an extra bonus, this library provides future compatibility with the `mongodb` extension and its
+`MongoDB\BSON\UTCDateTime` class.
+
 ## Installation
 
 ```bash
