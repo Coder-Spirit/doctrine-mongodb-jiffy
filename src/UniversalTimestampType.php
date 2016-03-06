@@ -54,7 +54,7 @@ class UniversalTimestampType extends Type
         if (extension_loaded('mongo')) {
             return '$return = (null !== $v) ? $v->asMongoDate() : null;';
         } elseif (extension_loaded('mongodb')) {
-            return '$return (null !== $timestamp) ? $timestamp->asMongodbUTCDateTime() : null;';
+            return '$return (null !== $v) ? $v->asMongodbUTCDateTime() : null;';
         } else {
             throw new \RuntimeException('Missing MongoDB extension');
         }
