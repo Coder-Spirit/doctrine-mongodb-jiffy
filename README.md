@@ -12,7 +12,7 @@
 PHP does not offer any native class to implement timestamps with milliseconds or microseconds precision, the only
 "native" way to do it is working with the weird `microtime` function and/or the `\MongoDate` class.
 
-This library provides a Doctrine ODM type to make possible using the PHP-Jiffy's UniversalTimestamp objects in our
+This library provides a Doctrine ODM type to make possible using the [PHP-Jiffy's UniversalTimestamp](https://github.com/Litipk/php-jiffy) objects in our
 Doctrine ODM models. It's very useful if you need to deal with very precise timestamps but you don't want to couple your
 code with the `\MongoDate` class without giving up on type hinting.
 
